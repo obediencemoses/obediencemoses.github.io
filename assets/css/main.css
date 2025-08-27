@@ -248,6 +248,22 @@ img,
   --tp-theme-7: #2CAE76;
   --tp-theme-8: #FF5A1B;
   --tp-theme-9: #03041C;
+  
+  /* Custom Dark Mode Variables */
+  --dark-bg-primary: #000000;
+  --dark-bg-secondary: #111111;
+  --dark-bg-tertiary: #1a1a1a;
+  --dark-text-primary: #ffffff;
+  --dark-text-secondary: #e0e0e0;
+  --dark-text-muted: #b0b0b0;
+  --dark-border-primary: #333333;
+  --dark-border-secondary: #666666;
+  --dark-accent-primary: #008080;
+  --dark-accent-secondary: #50a3a3;
+  --dark-overlay: rgba(0, 0, 0, 0.95);
+  --dark-overlay-light: rgba(0, 0, 0, 0.8);
+  --dark-stroke-color: #666666;
+  --dark-stroke-width: 1.5px;
   --tp-theme-10: #ED212C;
   --tp-rgb-theme-1: 245, 9, 99;
   --tp-rgb-theme-1-dark: 195, 0, 75;
@@ -53194,3 +53210,362 @@ blockquote cite::before {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* ========================================
+   DARK MODE STYLES - Custom Implementation
+   ======================================== */
+
+.dark-mode {
+   background-color: var(--dark-bg-primary) !important;
+   color: var(--dark-text-primary) !important;
+}
+
+/* Header & Navigation */
+.dark-mode header,
+.dark-mode .header__area,
+.dark-mode .header__bottom {
+   background-color: var(--dark-bg-primary) !important;
+   color: var(--dark-text-primary) !important;
+}
+
+/* Desktop Menu Styles */
+.desktop-menu {
+   display: block;
+}
+
+.desktop-menu nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   align-items: center;
+}
+
+.desktop-menu nav ul li {
+   position: relative;
+   display: inline-block;
+   margin-right: 2rem;
+}
+
+.desktop-menu nav ul li:last-child {
+   margin-right: 0;
+}
+
+.desktop-menu nav ul li a {
+   color: var(--dark-text-primary) !important;
+   font-size: 16px;
+   font-weight: 500;
+   text-decoration: none;
+   padding: 16px 0;
+   transition: var(--transition-colors);
+   display: inline-block;
+}
+
+.desktop-menu nav ul li a:hover {
+   color: var(--dark-accent-primary) !important;
+}
+
+/* Desktop Menu Dropdown */
+.desktop-menu .has-dropdown .submenu {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background-color: var(--dark-bg-tertiary) !important;
+   min-width: 200px;
+   box-shadow: var(--shadow-lg);
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(-10px);
+   transition: all 0.3s ease;
+   z-index: 999;
+   border-radius: var(--radius-md);
+   padding: var(--spacing-sm) 0;
+   list-style: none;
+}
+
+.desktop-menu .has-dropdown:hover .submenu {
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0);
+}
+
+.desktop-menu .submenu li {
+   display: block;
+   width: 100%;
+   margin-right: 0;
+}
+
+.desktop-menu .submenu li a {
+   display: block;
+   padding: var(--spacing-sm) var(--spacing-lg);
+   color: var(--dark-text-secondary) !important;
+   border-bottom: 1px solid var(--dark-border-primary);
+}
+
+.desktop-menu .submenu li:last-child a {
+   border-bottom: none;
+}
+
+.desktop-menu .submenu li a:hover {
+   background-color: var(--dark-bg-secondary);
+   color: var(--dark-text-primary) !important;
+}
+
+/* Hide desktop menu on non-desktop devices */
+@media (max-width: 991.98px) {
+   .desktop-menu {
+      display: none !important;
+   }
+}
+
+/* Navigation in header__intro area */
+.header__intro nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.header__intro nav ul li {
+   position: relative;
+   display: inline-block;
+}
+
+.header__intro nav ul li a {
+   color: var(--dark-text-primary) !important;
+   font-size: 16px;
+   font-weight: 500;
+   text-decoration: none;
+   padding: 8px 0;
+   transition: var(--transition-colors);
+}
+
+.header__intro nav ul li a:hover {
+   color: var(--dark-accent-primary) !important;
+}
+
+/* Dropdown styles for header__intro navigation */
+.header__intro .has-dropdown .submenu {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background-color: var(--dark-bg-tertiary) !important;
+   min-width: 200px;
+   box-shadow: var(--shadow-lg);
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(-10px);
+   transition: all 0.3s ease;
+   z-index: 999;
+   border-radius: var(--radius-md);
+   padding: var(--spacing-sm) 0;
+}
+
+.header__intro .has-dropdown:hover .submenu {
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0);
+}
+
+.header__intro .submenu li {
+   display: block;
+   width: 100%;
+}
+
+.header__intro .submenu li a {
+   display: block;
+   padding: var(--spacing-sm) var(--spacing-lg);
+   color: var(--dark-text-secondary) !important;
+   border-bottom: 1px solid var(--dark-border-primary);
+}
+
+.header__intro .submenu li:last-child a {
+   border-bottom: none;
+}
+
+.header__intro .submenu li a:hover {
+   background-color: var(--dark-bg-secondary);
+   color: var(--dark-text-primary) !important;
+}
+
+/* Hamburger button styles using color variables */
+.hamburger-btn span {
+   background-color: var(--dark-text-primary) !important;
+}
+
+.dark-mode .hamburger-btn span {
+   background-color: var(--dark-text-primary) !important;
+}
+
+.hamburger-btn-black span {
+   background-color: var(--dark-text-primary) !important;
+}
+
+.dark-mode .hamburger-btn-black span {
+   background-color: var(--dark-text-primary) !important;
+}
+
+/* Ensure navigation menu container is visible */
+.dark-mode .main-menu {
+   background-color: transparent !important;
+   display: block !important;
+   visibility: visible !important;
+}
+
+.dark-mode .main-menu ul li a:hover {
+   color: var(--dark-accent-primary) !important;
+}
+
+.dark-mode .submenu,
+.dark-mode .mega-menu {
+   background-color: var(--dark-bg-primary) !important;
+}
+
+.dark-mode .submenu li a,
+.dark-mode .mega-menu li a {
+   color: var(--dark-text-primary) !important;
+}
+
+/* Main Content Areas */
+.dark-mode .brand__area,
+.dark-mode .about__area,
+.dark-mode .portfolio__area,
+.dark-mode .skill__area,
+.dark-mode .award__area,
+.dark-mode .blog__area {
+   background-color: var(--dark-bg-primary) !important;
+   color: var(--dark-text-primary) !important;
+}
+
+/* Background Variations */
+.dark-mode .grey-bg-7 {
+   background-color: var(--dark-bg-secondary) !important;
+}
+
+.dark-mode .white-bg {
+   background-color: var(--dark-bg-tertiary) !important;
+   color: var(--dark-text-primary) !important;
+}
+
+/* Typography */
+.dark-mode .section__title-2 {
+   color: var(--dark-text-primary) !important;
+}
+
+.dark-mode .section__title-pre-2 {
+   color: transparent !important;
+   -webkit-text-stroke: var(--dark-stroke-width) var(--dark-stroke-color) !important;
+   font-weight: bold !important;
+   background: transparent !important;
+   fill: none !important;
+}
+
+/* Ensure section__title-pre-2 is always transparent */
+.section__title-pre-2 {
+   color: transparent !important;
+   -webkit-text-stroke: var(--dark-stroke-width) var(--dark-stroke-color) !important;
+   font-weight: bold !important;
+   background: transparent !important;
+   fill: none !important;
+}
+
+/* Component Cards */
+.dark-mode .about__counter-item,
+.dark-mode .award__item,
+.dark-mode .blog__item-2 {
+   background-color: var(--dark-bg-tertiary) !important;
+   color: var(--dark-text-primary) !important;
+}
+
+/* Footer */
+.dark-mode .footer__area {
+   background-color: var(--dark-bg-primary) !important;
+   color: var(--dark-text-primary) !important;
+}
+
+/* Modals & Popups */
+.dark-mode .offcanvas__area {
+   background-color: var(--dark-bg-primary) !important;
+   color: var(--dark-text-primary) !important;
+}
+
+.dark-mode .search__popup {
+   background-color: var(--dark-overlay) !important;
+}
+
+.dark-mode .newsletter__area {
+   background-color: var(--dark-bg-primary) !important;
+   color: var(--dark-text-primary) !important;
+}
+
+/* Sections */
+.dark-mode .testimonial__area {
+   background-color: var(--dark-bg-primary) !important;
+}
+
+.dark-mode .cta__area {
+   background-color: var(--dark-bg-primary) !important;
+}
+
+/* Text Elements */
+.dark-mode p,
+.dark-mode span:not(.tp-btn-green):not(.slider__review-icon) {
+   color: var(--dark-text-secondary) !important;
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6 {
+   color: var(--dark-text-primary) !important;
+}
+
+/* Forms & Inputs */
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+   background-color: var(--dark-bg-tertiary) !important;
+   color: var(--dark-text-primary) !important;
+   border-color: var(--dark-border-primary) !important;
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+   color: var(--dark-text-muted) !important;
+}
+
+/* Buttons */
+.dark-mode .btn:not(.tp-btn-green):not(.btn-primary) {
+   background-color: var(--dark-bg-tertiary) !important;
+   color: var(--dark-text-primary) !important;
+   border-color: var(--dark-border-primary) !important;
+}
+
+.dark-mode .btn:not(.tp-btn-green):not(.btn-primary):hover {
+   background-color: var(--dark-accent-primary) !important;
+   border-color: var(--dark-accent-primary) !important;
+}
+
+/* Borders & Separators */
+.dark-mode .border,
+.dark-mode hr {
+   border-color: var(--dark-border-primary) !important;
+}
+
+/* Cards & Panels */
+.dark-mode .card,
+.dark-mode .panel {
+   background-color: var(--dark-bg-tertiary) !important;
+   color: var(--dark-text-primary) !important;
+   border-color: var(--dark-border-primary) !important;
+}
+
+/* Links */
+.dark-mode a:not(.btn):not(.tp-btn-green) {
+   color: var(--dark-accent-secondary) !important;
+}
+
+.dark-mode a:not(.btn):not(.tp-btn-green):hover {
+   color: var(--dark-accent-primary) !important;
+}
