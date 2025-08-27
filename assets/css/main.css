@@ -16661,7 +16661,7 @@ input[type=color] {
   color: var(--tp-theme-1);
 }
 .slider__review {
-  margin-top: 213px;
+  margin-top: 96px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .slider__review {
