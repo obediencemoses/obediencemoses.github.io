@@ -54,9 +54,9 @@
                            </a>
                         </div>
                      </div>
-                     <div class="col-xxl-7 col-xl-8 col-lg-8 d-none d-lg-block">
+                     <div class="col-xxl-7 col-xl-8 col-lg-8 d-lg-none d-block">
                         <div class="desktop-menu pl-55">
-                           <nav>
+                           <nav class="d-flex justify-content-center">
                               <ul class="d-flex align-items-center m-0 list-unstyled">
                                  <li class="me-4">
                                     <a href="index.html">Home</a>
@@ -70,7 +70,7 @@
                                     </ul>
                                  </li>
                                  <li class="me-4">
-                                    <a href="works-achievements.html">Works & Achievements</a>
+                                    <a href="achievements.html">Achievements</a>
                                  </li>
                                  <li class="me-4">
                                     <a href="contact.html">Contact</a>
@@ -229,7 +229,7 @@
       <main>
 
          <!-- slider area start -->
-         <section class="slider__area p-relative z-index-1 include-bg" data-background="assets/img/banner/banner-1.jpg" style="background-attachment: fixed; background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+         <section class="slider__area p-relative z-index-1 include-bg" data-background="assets/img/banner/banner-1.jpg" style="background-attachment: fixed; background-size: cover; background-position-x: center; background-position-y: 20%; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
             <!-- Dark overlay -->
             <div class="slider__overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
             
@@ -250,28 +250,20 @@
                </a>
             </div>
             <div class="slider__mouse-scroll smooth d-flex align-items-center" style="z-index: 2; color: white;">
-               <a href="#about" class="mouse-scroll-icon" style="color: white;"></a>
+               <a href="#about" class="mouse-scroll-icon" style="border-color: white;"></a>
                <p><a href="#about" style="color: white;">Scroll Down</a></p>
             </div>
 
             <div class="container" style="z-index: 2; position: relative;">
-               <div class="row justify-content-center">
+               <div class="row justify-content-left">
                   <div class="col-xxl-8 col-xl-8 col-lg-10">
-                     <div class="slider__content-2 text-center" style="color: white;">
-                        <span class="slider__title-pre-2" style="color: white;">Douglas Lyphe</span>
-                        <h3 class="slider__title-2" style="color: white;">New Design Creation</h3>
+                     <div class="slider__content-2 text-left" style="color: white;">
+                        <h1 class="slider__title-pre-2" style="color: white;">Obedience Moses</h1>
+                        <h2 class="slider__title-2" style="color: white;">Web Developer, Entrepreneur, Leader</h2>
                         <div class="slider__btn-2">
-                           <a href="contact.html" class="tp-btn-green">Let’s talk</a>
+                           <a href="#about" class="tp-btn-green">Meet Me</a>
                         </div>
-                        <div class="slider__review" style="color: white;">
-                           <span class="slider__review-icon">
-                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M9.38703 1.15089L10.7954 3.98714C10.9875 4.3739 11.4996 4.76066 11.9264 4.82512L14.4764 5.25485C16.1088 5.53418 16.4929 6.71595 15.3193 7.89772L13.3347 9.90673C13.004 10.2398 12.8119 10.8951 12.9186 11.3678L13.4841 13.8495C13.9322 15.8048 12.8973 16.5676 11.1795 15.547L8.78954 14.1181C8.35209 13.8603 7.64791 13.8603 7.21046 14.1181L4.80982 15.5363C3.09204 16.5569 2.0571 15.7941 2.50522 13.8388L3.0707 11.3571C3.17739 10.8951 2.98534 10.2398 2.65459 9.89599L0.680735 7.90846C-0.492909 6.72669 -0.108807 5.53418 1.52362 5.2656L4.07363 4.83586C4.50041 4.76066 5.01254 4.38464 5.2046 3.99788L6.61297 1.16163C7.3705 -0.385415 8.6295 -0.385415 9.38703 1.15089Z" fill="#008080"/>
-                              </svg>                                 
-                           </span>
-                           <p style="color: white;"><span>Excellent</span> 4.9 out of 5</p>
-                           <span class="slider__review-client"><img src="assets/img/slider/2/slider-review.png" alt=""></span>
-                        </div>
+                        
                      </div>
                   </div>
                </div>
@@ -321,8 +313,8 @@
                <div class="row">
                   <div class="col-xxl-12">
                      <div class="section__title-wrapper-2 text-center mb-40">
-                        <span class="section__title-pre-2">INTRODUCTION</span>
-                        <h3 class="section__title-2">about me</h3>
+                        <span class="section__title-pre-2" style="color: transparent !important">INTRODUCTION</span>
+                        <h2 class="section__title-2">About me</h2>
                         <p>A brand today is all about how it makes your customers feel.</p>
                      </div>
                   </div>
@@ -371,7 +363,7 @@
                            <p>Im a UX Designer, Over the past 10+ years I’ve created well-crafted mobile and web apps by connecting Business goals with user needs.Currently Service and Interaction Designer UIUXer office. </p>
                         </div>
                         <div class="about__author-info">
-                           <h3 class="about__author-title-2">Douglas Lyphe</h3>
+                           <h3 class="about__author-title-2">Obedience Moses</h3>
                            <div class="about__author-sign">
                               <img src="assets/img/about/about-author-sign.png" alt="">
                            </div>
@@ -389,8 +381,8 @@
                <div class="row">
                   <div class="col-xxl-12">
                      <div class="section__title-wrapper-2 text-center mb-40">
-                        <span class="section__title-pre-2">All Creative Works</span>
-                        <h3 class="section__title-2">Creative Works</h3>
+                        <span class="section__title-pre-2"  style="color: transparent !important">All Creative Works</span>
+                        <h2 class="section__title-2">Creative Works</h2>
                         <p>Featured projects, which my best projects be choice to show</p>
                      </div>
                   </div>
@@ -521,8 +513,8 @@
                <div class="row">
                   <div class="col-xxl-12">
                      <div class="section__title-wrapper-2 text-center mb-65">
-                        <span class="section__title-pre-2">Skill & Experiences</span>
-                        <h3 class="section__title-2">Skill & Experiences</h3>
+                        <span class="section__title-pre-2"  style="color: transparent !important">Skill & Experiences</span>
+                        <h2 class="section__title-2">Skill & Experiences</h2>
                         <p>At vero eos censes aut reiciendis voluptatibus maiores alias consequatur.</p>
                      </div>
                   </div>
@@ -713,8 +705,8 @@
                <div class="row">
                   <div class="col-xxl-12">
                      <div class="section__title-wrapper-2 text-center mb-60">
-                        <span class="section__title-pre-2">My Awards</span>
-                        <h3 class="section__title-2">My Awards</h3>
+                        <span class="section__title-pre-2"  style="color: transparent !important">My Awards</span>
+                        <h2 class="section__title-2">My Awards</h2>
                         <p>At vero eos censes aut reiciendis voluptatibus maiores.</p>
                      </div>
                   </div>
@@ -826,8 +818,8 @@
                <div class="row">
                   <div class="col-xxl-12">
                      <div class="section__title-wrapper-2 text-center mb-60">
-                        <span class="section__title-pre-2">TESTIMONIALS</span>
-                        <h3 class="section__title-2">What My Clients Say</h3>
+                        <span class="section__title-pre-2"  style="color: transparent !important">TESTIMONIALS</span>
+                        <h2 class="section__title-2">What My Clients Say</h2>
                      </div>
                   </div>
                </div>
@@ -973,8 +965,8 @@
                <div class="row">
                   <div class="col-xxl-12">
                      <div class="section__title-wrapper-2 text-center mb-60">
-                        <span class="section__title-pre-2">Articles & News</span>
-                        <h3 class="section__title-2">Articles & News</h3>
+                        <span class="section__title-pre-2"  style="color: transparent !important">Articles & News</span>
+                        <h2 class="section__title-2">Articles & News</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                      </div>
                   </div>
@@ -1075,7 +1067,7 @@
                   <div class="row align-items-center">
                      <div class="col-xxl-5 col-xl-5 col-lg-6">
                         <div class="cta__content">
-                           <h3 class="cta__title">Subscribe <br> to my Newsletter</h3>
+                           <h2 class="cta__title">Subscribe <br> to my Newsletter</h2>
                         </div>
                      </div>
                      <div class="col-xxl-7 col-xl-7 col-lg-6">

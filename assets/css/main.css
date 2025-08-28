@@ -13990,7 +13990,7 @@ input[type=color] {
   -ms-transform: translate(0%, 0%);
   -o-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
-  background-color: var(--tp-common-blue);
+  background-color: var(--dark-bg-primary);
   z-index: -1;
   opacity: 0.4;
 }
@@ -16661,7 +16661,7 @@ input[type=color] {
   color: var(--tp-theme-1);
 }
 .slider__review {
-  margin-top: 96px;
+  margin-top: 88px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .slider__review {
@@ -53259,6 +53259,7 @@ blockquote cite::before {
    padding: 16px 0;
    transition: var(--transition-colors);
    display: inline-block;
+   text-transform: uppercase;
 }
 
 .desktop-menu nav ul li a:hover {
@@ -53563,7 +53564,7 @@ blockquote cite::before {
 
 /* Links */
 .dark-mode a:not(.btn):not(.tp-btn-green) {
-   color: var(--dark-accent-secondary) !important;
+   color: var(--tp-common-white) !important;
 }
 
 .dark-mode a:not(.btn):not(.tp-btn-green):hover {
