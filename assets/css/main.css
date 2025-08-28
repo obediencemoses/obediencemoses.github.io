@@ -16661,7 +16661,7 @@ input[type=color] {
   color: var(--tp-theme-1);
 }
 .slider__review {
-  margin-top: 88px;
+  margin-top: 96px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .slider__review {
@@ -53282,6 +53282,8 @@ blockquote cite::before {
    border-radius: var(--radius-md);
    padding: var(--spacing-sm) 0;
    list-style: none;
+   display: flex;
+   flex-direction: column;
 }
 
 .desktop-menu .has-dropdown:hover .submenu {
@@ -53294,6 +53296,7 @@ blockquote cite::before {
    display: block;
    width: 100%;
    margin-right: 0;
+   margin-bottom: 0;
 }
 
 .desktop-menu .submenu li a {
