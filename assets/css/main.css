@@ -53282,6 +53282,8 @@ blockquote cite::before {
    border-radius: var(--radius-md);
    padding: var(--spacing-sm) 0;
    list-style: none;
+   display: flex;
+   flex-direction: column;
 }
 
 .desktop-menu .has-dropdown:hover .submenu {
@@ -53294,6 +53296,7 @@ blockquote cite::before {
    display: block;
    width: 100%;
    margin-right: 0;
+   margin-bottom: 0;
 }
 
 .desktop-menu .submenu li a {
